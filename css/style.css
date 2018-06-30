@@ -1,0 +1,267 @@
+/* ================================= 
+全局设置
+==================================== */
+
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+/* ================================= 
+移动优先CSS规则
+==================================== */
+
+/*  123.html    */
+
+.short {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    /*需要用padding来维持16:9比例,也就是9除以16*/
+    height: 0;
+
+}
+
+.short video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+/*  123.html    */
+
+body {
+    background: url("../images/timg1.jpg");
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(#3333CC, #3366CC, #3399CC, 1);
+
+}
+
+a {
+    display: block;
+    color: black;
+}
+
+b {
+    display: block;
+    color: #00FFCC;
+}
+
+}
+
+button {
+    font-size: .85em;
+    padding: .65em 1em;
+    border-radius: .6em;
+    outline: 0;
+    color: #00FF99;
+}
+
+.Logo {
+    margin: 0;
+}
+
+.Logo a {
+    padding-top: .6em;
+    padding-bottom: .5em;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: .5em 0;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+
+
+h2 {
+    margin: 0;
+
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    color: black;
+}
+
+.col h1 {
+    text-align: center;
+}
+
+.col h2 {
+    text-align: center;
+}
+
+.col {
+    background-color: #6699FF;
+    color: white;
+    text-shadow: 1px 1px 1px raba(0, 0, 0, .5);
+    padding: 1em 0;
+}
+
+.music {
+    background-color: #6666FF;
+}
+
+.videos {
+    width: 100%;
+}
+
+.videos video {
+    width: 100%;
+}
+
+.movie {
+    background-color: #66CCFF;
+}
+
+.navlist li a {
+    padding: 1em 0;
+}
+
+.navlist li a:hover {
+    background-color: yellow;
+    transition: 3s;
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background-color: firebrick;
+}
+
+.wrap {
+    min-height: calc(100vh - 86px);
+}
+
+.jack {
+    background: url(../images/timg2.jpg);
+    background-size: auto;
+    background-position: center center;
+    color: peru;
+    text-align: right;
+    padding: 14em;
+}
+
+
+footer {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+    border-top: 1px dashed rgba(255, 255, 255, 0.6);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.wrap {
+    min-height: calc(100vh - 133px);
+}
+
+.biography {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.biography img {
+    padding: 0 1em;
+    width: 94;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*下面属于电脑终端！！！*/
+
+@media (min-width:1000px) {
+    .main-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .navlist {
+        display: flex;
+        align-items: stretch;
+
+    }
+
+    .navlist li a {
+        padding: 2em 2em;
+
+    }
+
+    .banner {
+        height: 700px;
+    }
+    .container {
+        padding: 2em 0;
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .col {
+        flex-basis: 20%;
+        flex-grow: 1;
+        margin: 0 .6em;
+        height: 350px;
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 15px;
+        border: 0px solid rgba(0, 0, 0, 0);
+    }
+
+
+    .col h1 {
+        padding: 0 .5em;
+    }
+}
